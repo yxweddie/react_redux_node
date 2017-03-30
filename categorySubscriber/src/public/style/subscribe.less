@@ -1,0 +1,141 @@
+@import "default.less";
+@import "color.less";
+@import "font.less";
+
+
+
+.float-left{
+    float: left;
+}
+
+.middle {
+    background-color : @light-gray;
+    top : 20%;
+    width : 600px;
+    height: 700px;
+    margin: 0px auto 0px auto;
+}
+
+.header{
+    background-color: @light-black;
+    color: @white;
+    font-size: @header-font;
+    width: inherit;
+    margin: 0;
+    text-align: center;
+    ul{
+        overflow: hidden;
+        li{
+            float: left;
+            a{
+                display: block;
+                color: white;
+                padding: 10px 10px;
+                font-size: 25px;
+                &:hover:not(.active){
+                    background-color: #111;
+                }
+                &.active{
+                    background-color: #390;
+                }
+            }
+        }
+    }
+    
+}
+
+h2 {
+    color: #a5adaf;
+    font-size: 14px;
+    padding: 10px 14px;
+    span{
+        float: right;
+        color: #390;
+    }
+}
+
+
+.selected-list{
+    background-color: #f0f0f0;
+    border: 1px solid #e1e1e1;
+    margin: 0 8px 8px;
+    height: 200px;
+    position: relative;
+    overflow: auto;
+    .feed-list{
+        padding: 5px 5px 0;
+        right: 0;
+
+        span{
+            padding-right: 18px;
+            position: relative;
+            overflow: hidden;
+
+        }
+    }
+}
+
+.feed-list {
+    padding: 5px 12px;
+    
+    li{
+        width: 33.3%;
+        float: left;
+        overflow: hidden;
+    }
+
+    .empty-list{
+        height: 40px;
+        line-height: 20px;
+        width: 150px;
+        padding-left: 48px;
+        margin: 52px auto 0;
+        color: #ced2d3;
+        background-size: 38px 38px;
+        float: none;
+    }
+
+    span{
+        display: block;
+        text-align: center;
+        border: 1px solid #e3e3e3;
+        border-radius: 4px;
+        background-color: #fff;
+        height: 38px;
+        line-height: 38px;
+        margin: 0 3px 8px;
+        font-size: 14px;
+    }
+
+    .disable{
+        background-color: #efefef;
+    }
+
+    .close {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        width: 20px;
+        height: 20px;
+        opacity: 0.3;
+        &:hover{
+            opacity: 1;
+        }
+        &:before, &:after{
+            position: absolute;
+            left: 0px;
+            content: ' ';
+            height: 20px;
+            width: 3px;
+            background-color: #333;
+        }
+        &:before{
+            transform: rotate(45deg);
+        }
+        &:after{
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+
