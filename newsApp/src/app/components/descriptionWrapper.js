@@ -8,14 +8,14 @@ class DescriptionWrapper extends React.Component{
     getSubNews(){
         return this.props.articles.map((article,index)=>{
             return (
-                <div key = {index}  className = "col-md-12 col-sm-12 description">
-                        <img className = "col-md-12 col-sm-12" src= {article.urlToImage} />
-                        <h3 className = "col-md-12 col-sm-12">{article.title}</h3>
-                        <div className = "col-md-8 col-sm-8 pull-left text-left">
+                <div key = {index}  className = "col-md-12 col-xs-12 description">
+                        <img className = "col-md-12 col-sm-12 col-xs-12 img-responsive" src= {article.urlToImage} />
+                        <h3 className = "col-md-12 col-sm-12 col-xs-12 ">{article.title}</h3>
+                        <div className = "col-md-8 col-sm-8 col-xs-8 pull-left text-left">
                             <title>Abstract</title>
                             <p>{article.description}</p>
                         </div>
-                        <div className = "col-md-4 col-sm-4 pull-right text-right">
+                        <div className = "col-md-4 col-sm-4 col-xs-4 pull-right text-right">
                             <title>Publish Time</title>
                             <p >
                                 {

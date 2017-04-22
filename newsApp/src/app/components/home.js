@@ -50,16 +50,16 @@ class Home extends React.Component{
                 </div>
 
                 <div className = "row line-break">
-                    <div className= "col-md-2 col-sm-2 ">
+                    <div className= "col-md-2 col-sm-2 col-xs-2 ">
                         <button className = " btn btn-default pull-left" type="button" onClick={this.prev.bind(this)}>
                             <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         </button>
                     </div>
-                    <div className= "col-md-8 col-sm-8 text-center line-break-title">
+                    <div className= "col-md-8 col-sm-8 col-xs-8 text-center line-break-title">
                         <span>{this.props.contents.currentChanel}</span>
                     </div>
                     
-                    <div className= "col-md-2 col-sm-2 ">
+                    <div className= "col-md-2 col-sm-2 col-xs-2 ">
                         <button className = "btn btn-default pull-right" type="button" onClick={this.next.bind(this)}>
                             <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         </button>
