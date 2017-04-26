@@ -2,6 +2,8 @@
 
 This is a React-Redux-node web app, which pulls the specific (Top 10) news of a news channel from "NewsApi.org" Api.
 
+You can view this through : http://getstartednode-bluebelled-flanchard.mybluemix.net/
+
 ## Implementation
 
 This app uses React-redux for building the frontend part and node(express) for backend and webpack.js for files management. What's more, it uses the bootsrap and less for styling.
